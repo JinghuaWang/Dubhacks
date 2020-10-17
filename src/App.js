@@ -1,26 +1,21 @@
-import React from 'react';
-import { Button } from 'antd';
+import React, {Component} from 'react';
 import './App.css';
-import { Steps, Divider } from 'antd';
-const { Step } = Steps;
+import Title from "./Title"
+import MainContent from "./Carousel";
 
-function App() {
-  return (
-    <div className="App">
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
-      <>
-        <Steps progressDot current={1}>
-          <Step title="Finished" description="This is a description." />
-          <Step title="In Progress" description="This is a description." />
-          <Step title="Waiting" description="This is a description." />
-        </Steps>
-        <Divider />
-        React and Ant Design are work! Wow!
-      </>,
-    </div>
-  );
+class App extends Component{
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+        <div>
+            <Title/>
+            <MainContent/>
+        </div>
+    );
+  }
 }
 
 export default App;
