@@ -19,16 +19,37 @@ const locations =
       }
     },
     {
+      name: "Jinhae-gu, Korea",
+      geoInfo: {
+        position:{lat: 35.1579889, lng: 128.6595771}, 
+        pov:{heading:210, pitch:35}
+      }
+    },
+    {
+      name: "Botanic Gardens, United Kingdom",
+      geoInfo: {
+        position:{lat: 51.4787438, lng: -0.295573}, 
+        pov:{heading:230.83, pitch:-10},
+      }
+    },
+    {
       name: "Wuhan, China",
-      
-    }
+      geoInfo: {
+        position:{lat: 30.5360482, lng: 114.364323}, 
+        pov:{heading:327.83, pitch:-90}
+      },
+    },
+  
   ];
 
 class Trip extends React.Component {
 
-  state = {
-    current: 0,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      current: 0,
+    };
+  }
 
   selectLocation = current => {
     this.setState({ current });
@@ -41,10 +62,9 @@ class Trip extends React.Component {
           <LocationBar locations={locations} selectLocation={this.selectLocation}/>
           <div id="street-view">
 
-            <Map geoInfo={locations[1].geoInfo}/>
+            <Map geoInfo={locations[this.state.current].geoInfo}/>
           </div>
           <div id="addition-info">
-            <SuggestedList/>
           </div>
         </div>
       </div>

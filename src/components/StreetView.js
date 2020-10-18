@@ -1,12 +1,19 @@
 import React from 'react'
 
 class StreetView extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      map: null,
+      panorama: null
+    }
+  }
 
   componentDidMount() {
     const google = window.google;
-    const fenway = { lat: 42.345573, lng: -71.098326 };
+
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: fenway,
+      center: this.props.geoInfo.position,
       zoom: 16,
       mapTypeControl: false
     });
@@ -20,10 +27,14 @@ class StreetView extends React.Component {
     panorama.addListener("position_changed", () => {
       map.setCenter(panorama.getPosition());
     });
+    this.setState({map: map, panorama: panorama})
   }
  
-  render() {
+  shouldComponentUpdate(nextProps, nextState) {
+    nextState.map.setCenter(nextProps.geoInfo);
+  }
 
+  render() {
     return (
       <div id="flex-box" style={{           
         width: '100vw',                   
