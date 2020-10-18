@@ -2,7 +2,22 @@ import React from 'react';
 import Map from "../components/StreetView";
 import LocationBar from "../components/LocationBar"
 
-const locations = ["Seattle", "Japan", "China"];
+const locations = 
+  [
+    { name: "Seattle, United States", 
+      geoInfo: {
+        position:{lat: 47.6572773, lng: -122.3072585}, 
+        pov:{heading:36, pitch:15}
+      }
+    },
+    {
+      name: " Hirosaki Park, Japan",
+      geoInfo: {
+        position:{lat: 40.6083251, lng: 140.4633958}, 
+        pov:{heading:325, pitch:5}
+      }
+    }
+  ];
 
 class Trip extends React.Component {
 
@@ -10,8 +25,7 @@ class Trip extends React.Component {
     current: 0,
   };
 
-  onChange = current => {
-    console.log('onChange:', current);
+  selectLocation = current => {
     this.setState({ current });
   };
 
@@ -19,12 +33,12 @@ class Trip extends React.Component {
     return (
       <div id="trip-page">
         <div>
-          <LocationBar locations={locations}/>
+          <LocationBar locations={locations} selectLocation={this.selectLocation}/>
           <div id="street-view">
-            <Map></Map>
+            <Map geoInfo={locations[1].geoInfo}/>
           </div>
           <div id="addition-info">
-
+            {this.state.current}
           </div>
         </div>
       </div>

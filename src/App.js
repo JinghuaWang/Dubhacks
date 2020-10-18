@@ -20,7 +20,7 @@ class App extends Component{
   }
 
   render() {
-      if (this.state.gameStart) {
+      if (!this.state.gameStart) {
           return <Trip/>
       }
       return (

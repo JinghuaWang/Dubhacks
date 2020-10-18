@@ -13,13 +13,7 @@ class StreetView extends React.Component {
 
     const panorama = new google.maps.StreetViewPanorama(
       document.getElementById("pano"),
-      {
-        position: fenway,
-        pov: {
-          heading: 350,
-          pitch: 10,
-        },
-      }
+      this.props.geoInfo
     );
     map.setStreetView(panorama);
     // Recenter the mini map everytime user moves
@@ -50,7 +44,7 @@ class StreetView extends React.Component {
           </div>
           <div id="map" style={{ 
             position: 'absolute', right: '0px', bottom: '0px', width: '25%', height: '250px', zIndex:'1',
-            border: '6px solid white', boxShadow: '1px 3px 5px #888888', borderRadius: "1em" }}>
+            border: '6px solid white', boxShadow: '2px 3px 5px #888888', borderRadius: "1em" }}>
           </div>
         </div>
       </div>
