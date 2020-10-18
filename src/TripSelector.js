@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container'
-import "./TripSelector.css"
+import ArrayOfTrips from "./ArrayOfTrips";
+//import "./TripSelector.css"
 
 /**
  * Props:
- *
+ *  categories: categories of trips present
  */
 class TripSelector extends Component {
     constructor(props) {
@@ -12,12 +13,19 @@ class TripSelector extends Component {
     }
 
     render() {
+        let result = [];
+        for (let i = 0; i < this.props.categories.length; i++) {
+            let cat = this.props.categories[i];
+            result.push((
+                <ArrayOfTrips trips={this.props.trips}/>
+            ))
+        }
         return (
             <Container>
-                <Container>
-                    <ArrayOf
-                </Container>
+                {result}
             </Container>
         );
     }
 }
+
+export default TripSelector;

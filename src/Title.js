@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Title.css';
+//import './Title.css';
 
 /**
  * Props:

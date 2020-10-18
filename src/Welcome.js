@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import './Welcome.css'
+//import './Welcome.css'
 /**
  * props:
  */
