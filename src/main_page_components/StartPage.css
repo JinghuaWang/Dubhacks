@@ -1,0 +1,37 @@
+#theme_details{
+    text-align: center;
+    color: white;
+}
+
+#body, #intro{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#avatar{
+    width: 20em;
+    height: 15em;
+    margin: 10%
+}
+
+#main{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#next-button{
+    display: flex;
+    justify-content: center;
+    color:white;
+    align-items: center;
+}
+
+#next-button:hover{
+    cursor: pointer;
+}
+
+#theme_details  h3, #theme_details  h1{
+    color:white;
+}
