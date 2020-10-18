@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import Title from "./Title"
-import MainContent from "./MainContent";
+import Title from "./main_page_components/Title"
+import MainContent from "./main_page_components/MainContent";
 
 class App extends Component{
   constructor(props) {
@@ -12,7 +12,7 @@ class App extends Component{
     return (
         <div>
             <Title className={"title"}/>
-            <MainContent/>
+            <MainContent className={"title"}/>
         </div>
     );
   }

@@ -13,8 +13,8 @@ class MainContent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            trips: require('./Data/cards'),
-            categories: require('./Data/categories')
+            trips: require('../Data/cards'),
+            categories: require('../Data/categories')
         };
     }
 
@@ -24,7 +24,7 @@ class MainContent extends Component {
             <Container className={"Main_Carousel"}>
                 <Carousel interval={null}>
                     <Carousel.Item>
-                        <Welcome/>
+                        <Welcome className={"welcome"}/>
                     </Carousel.Item>
                     <Carousel.Item>
                        <TripSelector trips={this.state.trips} categories={this.state.categories}/>
