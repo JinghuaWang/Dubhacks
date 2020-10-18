@@ -10,7 +10,10 @@ import './Trips.css';
  * card obj
  */
 class Trips extends Component{
-
+    onClick = () => {
+        this.props.changeState();
+        //window.location.assign("");
+    }
 
     render() {
         let result = [];
@@ -25,7 +28,7 @@ class Trips extends Component{
                         <Card style={{backgroundImage: "url(img" + card["img_url"] + ")",
                                         backgroundSize: "cover", display: "flex" }}
                               className={"cards"}
-                              onClick={()=>{window.location.assign(card["tripStartUrl"])}}>
+                              onClick={this.onClick}>
                         </Card>
                     </OverlayTrigger>
                 )

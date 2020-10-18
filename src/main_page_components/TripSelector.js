@@ -19,7 +19,7 @@ class TripSelector extends Component {
             result.push((
                 <Container key={'ts' + i}>
                     <h3>{cat}</h3>
-                    <ArrayOfTrips trips={this.props.trips} cat={cat}/>
+                    <ArrayOfTrips changeState={this.props.changeState} trips={this.props.trips} cat={cat}/>
                 </Container>
             ))
         }

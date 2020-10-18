@@ -29,7 +29,7 @@ class ArrayOfTrips extends Component{
                 temp.push(cardInfo);
             }
             if (temp.length === 3 || i === this.props.trips.length - 1) {
-                result.push(<Carousel.Item><Trips key={i + 'a'} card={temp} /></Carousel.Item>);
+                result.push(<Carousel.Item><Trips changeState={this.props.changeState} key={i + 'a'} card={temp} /></Carousel.Item>);
                 temp = [];
             }
 

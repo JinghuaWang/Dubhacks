@@ -6,15 +6,28 @@ import MainContent from "./main_page_components/MainContent";
 class App extends Component{
   constructor(props) {
     super(props);
+    this.state = {
+        gameStart: false
+    };
+  }
+
+  setGame = () => {
+      let k = !(this.state.gameStart);
+      this.setState({
+          gameStart: k
+      })
   }
 
   render() {
-    return (
-        <div>
-            <Title className={"title"}/>
-            <MainContent className={"title"}/>
-        </div>
-    );
+      if (this.state.gameStart) {
+          return null;
+      }
+      return (
+          <div>
+              <Title className={"title"}/>
+              <MainContent className={"title"} changeState={this.setGame}/>
+          </div>
+      );
   }
 }
 

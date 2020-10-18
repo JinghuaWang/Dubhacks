@@ -27,7 +27,7 @@ class MainContent extends Component {
                         <Welcome className={"welcome"}/>
                     </Carousel.Item>
                     <Carousel.Item>
-                       <TripSelector trips={this.state.trips} categories={this.state.categories}/>
+                       <TripSelector changeState={this.props.changeState} trips={this.state.trips} categories={this.state.categories}/>
                     </Carousel.Item>
                 </Carousel>
             </Container>
