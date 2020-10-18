@@ -3,91 +3,91 @@
     "category": "Sight-seeing",
     "name": "National Parks",
     "description": "",
-    "img_url": "../img/sightseeing_nationalparks.jpg",
+    "img_url": "./img/sightseeing_nationalparks.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Sight-seeing",
     "name": "Cherry Blossom Season",
     "description": "",
-    "img_url": "../img/sightseeing_cherry.jpeg",
+    "img_url": "./img/sightseeing_cherry.jpeg",
     "tripStartUrl": ""
   }, {
     "category": "Sight-seeing",
     "name": "The Great Lakes",
     "description": "",
-    "img_url": "../img/sightseeing_lakes.jpg",
+    "img_url": "./img/sightseeing_lakes.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Sight-seeing",
     "name": "Sky Scrapers",
     "description": "",
-    "img_url": "../img/sightseeing_skyscrappers.webp",
+    "img_url": "./img/sightseeing_skyscrappers.webp",
     "tripStartUrl": ""
   }, {
     "category": "Sight-seeing",
     "name": "Ancient Trees",
     "description": "",
-    "img_url": "../img/sightseeing_trees.jpg",
+    "img_url": "./img/sightseeing_trees.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Historical",
     "name": "Castle & Knights",
     "description": "",
-    "img_url": "../img/historical_castle.jpeg",
+    "img_url": "./img/historical_castle.jpeg",
     "tripStartUrl": ""
   }, {
     "category": "Historical",
     "name": "Royal Families",
     "description": "",
-    "img_url": "../img/historical_royal.jpg",
+    "img_url": "./img/historical_royal.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Historical",
     "name": "The Seven Wonders",
     "description": "",
-    "img_url": "../img/sightseeing_7wonders.jpg",
+    "img_url": "./img/sightseeing_7wonders.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Historical",
     "name": "Streets in Literature",
     "description": "",
-    "img_url": "../img/historical_literature.jpg",
+    "img_url": "./img/historical_literature.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Historical",
     "name": "Archaeological Sites",
     "description": "",
-    "img_url": "../img/historical_archeo.webp",
+    "img_url": "./img/historical_archeo.webp",
     "tripStartUrl": ""
   }, {
     "category": "Social Impact",
     "name": "Anti-Human Trafficking",
     "description": "",
-    "img_url": "../img/socialimpact_humantrafficking.jpg",
+    "img_url": "./img/socialimpact_humantrafficking.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Social Impact",
     "name": "Wildfre Season",
     "description": "",
-    "img_url": "../img/socialimpact_wildfires.jpg",
+    "img_url": "./img/socialimpact_wildfires.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Social Impact",
     "name": "Bike Sharing",
     "description": "",
-    "img_url": "../img/social_bike.png",
+    "img_url": "./img/social_bike.png",
     "tripStartUrl": ""
   }, {
     "category": "Social Impact",
     "name": "Ongoing Conflilcts",
     "description": "",
-    "img_url": "../img/social_conflicts.jpg",
+    "img_url": "./img/social_conflicts.jpg",
     "tripStartUrl": ""
   }, {
     "category": "Social Impact",
     "name": "Covid Testing",
     "description": "",
-    "img_url": "../img/socialimpact_covid.jpg",
+    "img_url": "./img/socialimpact_covid.jpg",
     "tripStartUrl": ""
   }
 ]

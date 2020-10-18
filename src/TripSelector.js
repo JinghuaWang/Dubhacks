@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Container from 'react-bootstrap/Container'
 import ArrayOfTrips from "./ArrayOfTrips";
-//import "./TripSelector.css"
+import "./TripSelector.css"
 
 /**
  * Props:
@@ -17,9 +17,9 @@ class TripSelector extends Component {
         for (let i = 0; i < this.props.categories.length; i++) {
             let cat = this.props.categories[i];
             result.push((
-                <Container>
+                <Container key={'ts' + i}>
                     <h3>{cat}</h3>
-                    <ArrayOfTrips trips={this.props.trips}/>
+                    <ArrayOfTrips trips={this.props.trips} cat={cat}/>
                 </Container>
             ))
         }

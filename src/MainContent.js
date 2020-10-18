@@ -12,21 +12,25 @@ import Container from 'react-bootstrap/Container'
 class MainContent extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            trips: require('./Data/cards'),
+            categories: require('./Data/categories')
+        };
     }
 
     // from bootstrap
     render(){
         return (
-            <Carousel interval={null}>
-                <Container>
+            <Container>
+                <Carousel interval={null}>
                     <Carousel.Item>
                         <Welcome/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <TripSelector trips={[]} categories={[]}/>
+                       <TripSelector trips={this.state.trips} categories={this.state.categories}/>
                     </Carousel.Item>
-                </Container>
-            </Carousel>
+                </Carousel>
+            </Container>
         );
     }
 }
