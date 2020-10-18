@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Trip from "./Trip";
+import Trips from "./Trips";
 import Carousel from 'react-bootstrap/Carousel';
 
 /**
  * Props:
- * - trips: An array of Trip card objects
- *      i.e. Trip Card = [
+ * - trips: An array of Trips card objects
+ *      i.e. Trips Card = [
  *          {name:
  *           description:
  *           img url:
@@ -21,10 +21,11 @@ class ArrayOfTrips extends Component{
         let result = [];
         for (let i = 0; i < this.props.trips.length; i = i + 3) {
             let cardInfo = this.props.trips.slice(i, i + 3);
+            console.log()
             if (this.props.cat !== cardInfo["category"]) {
                 continue;
             }
-            result.push(<Carousel.Item><Trip card={cardInfo} /></Carousel.Item>);
+            result.push(<Carousel.Item><Trips card={cardInfo} /></Carousel.Item>);
         }
         return (
             <Carousel>

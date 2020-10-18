@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Title from "./Title"
-import MainContent from "./Carousel";
+import MainContent from "./MainContent";
 
 class App extends Component{
   constructor(props) {
