@@ -1,14 +1,23 @@
-import React from 'react';
-import { Button } from 'antd';
-import Trip from "./pages/Trip";
+import React, {Component} from 'react';
 import './App.css';
+import Title from "./Title"
+import MainContent from "./Carousel";
+import Trip from "./pages/Trip"
 
-function App() {
-  return (
-    <div className="App">
-      <Trip></Trip>
-    </div>
-  );
+class App extends Component{
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+        <div>
+            <Title/>
+            <MainContent/>
+            <Trip/>
+        </div>
+    );
+  }
 }
 
 export default App;
