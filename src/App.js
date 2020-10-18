@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Title from "./main_page_components/Title"
 import MainContent from "./main_page_components/MainContent";
+import Trip from './pages/Trip';
 
 class App extends Component{
   constructor(props) {
@@ -20,7 +21,7 @@ class App extends Component{
 
   render() {
       if (this.state.gameStart) {
-          return null;
+          return <Trip/>
       }
       return (
           <div>
