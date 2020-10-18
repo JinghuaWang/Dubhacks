@@ -12,7 +12,7 @@ class Location extends React.Component {
     return (
       <div style={locationStyle}>
         <div>{this.props.location}</div>
-        <img src={this.props.src} style={icon}></img>
+        <img src={this.props.src} style={icon} alt={this.props.src}/>
       </div>
     );
   }

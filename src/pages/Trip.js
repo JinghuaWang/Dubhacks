@@ -21,7 +21,7 @@ class Trip extends React.Component {
         <div>
           <LocationBar locations={locations}/>
           <div id="street-view">
-            <Map></Map>
+            <Map/>
           </div>
           <div id="addition-info">
 

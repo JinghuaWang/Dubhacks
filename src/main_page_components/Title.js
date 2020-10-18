@@ -17,8 +17,8 @@ class Title extends Component{
     render() {
         return (
             <div>
-                <h1>{this.state.msg["title"]}</h1>
-                <p>{this.state.msg["motto"]}</p>
+                <h1 className={"content"}>{this.state.msg["title"]}</h1>
+                <p className={"content"}>{this.state.msg["motto"]}</p>
             </div>
         );
     }

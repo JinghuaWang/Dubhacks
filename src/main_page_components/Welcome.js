@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron'
-//import './Welcome.css'
+import './Welcome.css'
 /**
  * props:
  */
@@ -14,9 +14,9 @@ class Welcome extends Component {
 
     render() {
         return (
-            <Jumbotron fluid={true}>
-                <h1>{this.state.msg["title"]}</h1>
-                <p>
+            <Jumbotron className={"welcome"} fluid={true}>
+                <h1 className={"content"}>{this.state.msg["title"]}</h1>
+                <p className={"content"}>
                     {this.state.msg["motto"]}
                 </p>
             </Jumbotron>
