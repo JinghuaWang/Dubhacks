@@ -1,6 +1,7 @@
 import React from 'react';
 import Map from "../components/StreetView";
-import LocationBar from "../components/LocationBar"
+import LocationBar from "../components/LocationBar";
+import SuggestedList from "../components/SuggestedList";
 
 const locations = ["Seattle", "Japan", "China"];
 
@@ -24,7 +25,7 @@ class Trip extends React.Component {
             <Map/>
           </div>
           <div id="addition-info">
-
+            <SuggestedList/>
           </div>
         </div>
       </div>
