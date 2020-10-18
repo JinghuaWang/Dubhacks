@@ -17,7 +17,10 @@ class TripSelector extends Component {
         for (let i = 0; i < this.props.categories.length; i++) {
             let cat = this.props.categories[i];
             result.push((
-                <ArrayOfTrips trips={this.props.trips}/>
+                <Container>
+                    <h3>{cat}</h3>
+                    <ArrayOfTrips trips={this.props.trips}/>
+                </Container>
             ))
         }
         return (
