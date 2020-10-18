@@ -4,5 +4,9 @@
 
 .cards{
     width: 40rem;
-    height: 20rem;
+    height: 10rem;
+}
+
+.cards:hover {
+    opacity: 0.5;
 }
