@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Edventure
+This project is a project we build in Dubhack 2020. It's an online educational and entertainment platform that utilizes Google Maps API to immerse users in the street view of cities and tourist attractions of a chosen theme. Along the tour, history, fun facts and current news of the location are presented to the viewer.
+
+This project is built with:
+- React
+- Google Street View API
+- Ant Design
+- BootStrap 4
+- Figma
+
+How to use?
+```
+git pull https://github.com/JinghuaWang/Dubhacks.git
+npm install
+npm start
+```
+
 
 ## Available Scripts
 
