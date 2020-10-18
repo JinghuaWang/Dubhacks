@@ -26,7 +26,7 @@ class LocationBar extends React.Component {
               }
               <Location location="End" index={this.props.locations.length+1} src="./dot_normal.png" selectLocation={this.props.selectLocation} />
             </div>
-            <div style={{height: `1px`, width: `100%`, backgroundColor: 'white', position: "absolute", bottom: "5px", zIndex: `1`}}></div>
+            <div style={{height: `1px`, width: `100%`, backgroundColor: 'white', position: "absolute", bottom: "4px", zIndex: `1`}}></div>
           </div>
         </div>
       </div>
