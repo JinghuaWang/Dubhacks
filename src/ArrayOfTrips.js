@@ -19,13 +19,20 @@ class ArrayOfTrips extends Component{
 
     render() {
         let result = [];
-        for (let i = 0; i < this.props.trips.length; i = i + 3) {
-            let cardInfo = this.props.trips.slice(i, i + 3);
-            console.log()
+        let temp = [];
+        for (let i = 0; i < this.props.trips.length; i++) {
+            let cardInfo = this.props.trips[i];
             if (this.props.cat !== cardInfo["category"]) {
                 continue;
             }
-            result.push(<Carousel.Item><Trips card={cardInfo} /></Carousel.Item>);
+            if (temp.length < 3) {
+                temp.push(cardInfo);
+            }
+            if (temp.length === 3 || i === this.props.trips.length - 1) {
+                result.push(<Carousel.Item><Trips key={i + 'a'} card={temp} /></Carousel.Item>);
+                temp = [];
+            }
+
         }
         return (
             <Carousel>

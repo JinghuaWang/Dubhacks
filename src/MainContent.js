@@ -21,7 +21,7 @@ class MainContent extends Component {
     // from bootstrap
     render(){
         return (
-            <Container>
+            <Container className={"Main_Carousel"}>
                 <Carousel interval={null}>
                     <Carousel.Item>
                         <Welcome/>
