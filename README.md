@@ -1,4 +1,4 @@
-#Edventure
+# Edventure
 This project is a project we build in Dubhack 2020. It's an online educational and entertainment platform that utilizes Google Maps API to immerse users in the street view of cities and tourist attractions of a chosen theme. Along the tour, history, fun facts and current news of the location are presented to the viewer.
 
 This project is built with:
