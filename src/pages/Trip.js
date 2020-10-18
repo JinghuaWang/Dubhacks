@@ -1,6 +1,7 @@
 import React from 'react';
 import Map from "../components/StreetView";
-import LocationBar from "../components/LocationBar"
+import LocationBar from "../components/LocationBar";
+import SuggestedList from "../components/SuggestedList";
 
 const locations = 
   [
@@ -16,6 +17,10 @@ const locations =
         position:{lat: 40.6083251, lng: 140.4633958}, 
         pov:{heading:325, pitch:5}
       }
+    },
+    {
+      name: "Wuhan, China",
+      
     }
   ];
 
@@ -35,10 +40,11 @@ class Trip extends React.Component {
         <div>
           <LocationBar locations={locations} selectLocation={this.selectLocation}/>
           <div id="street-view">
+
             <Map geoInfo={locations[1].geoInfo}/>
           </div>
           <div id="addition-info">
-            {this.state.current}
+            <SuggestedList/>
           </div>
         </div>
       </div>

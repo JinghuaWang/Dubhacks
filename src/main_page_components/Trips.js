@@ -11,7 +11,7 @@ import './Trips.css';
  */
 class Trips extends Component{
     onClick = () => {
-        this.props.changeState();
+        this.props.changeState(1);
         //window.location.assign("");
     }
 

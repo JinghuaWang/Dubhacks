@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import Welcome from "./Welcome";
 import TripSelector from "./TripSelector";
 import Container from 'react-bootstrap/Container'
-//import './Carousel.css'
+// import './MainContent.css'
 
 /**
  * Props:
@@ -21,16 +21,14 @@ class MainContent extends Component {
     // from bootstrap
     render(){
         return (
-            <Container className={"Main_Carousel"}>
-                <Carousel interval={null}>
-                    <Carousel.Item>
-                        <Welcome className={"welcome"}/>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                       <TripSelector changeState={this.props.changeState} trips={this.state.trips} categories={this.state.categories}/>
-                    </Carousel.Item>
-                </Carousel>
-            </Container>
+            <Carousel interval={null}>
+                <Carousel.Item id={"welcome"}>
+                    <Welcome className={"welcome"}/>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <TripSelector changeState={this.props.changeState} trips={this.state.trips} categories={this.state.categories}/>
+                </Carousel.Item>
+            </Carousel>
         );
     }
 }
